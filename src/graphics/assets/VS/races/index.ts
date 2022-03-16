@@ -1,0 +1,6 @@
+export * as protoss from './protoss.png'
+export * as protoss_white from './protoss_white.png'
+export * as terran from './terran.png'
+export * as terran_white from './terran_white.png'
+export * as Zerg from './Zerg.png'
+export * as Zerg_white from './Zerg_white.png'

@@ -1,7 +1,4 @@
 node_modules
-/graphics
-/dashboard
-/extension
 /replicants
 /shared/dist
 .env

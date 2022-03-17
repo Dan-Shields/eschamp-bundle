@@ -94,11 +94,11 @@ const bots = useReplicant<typeof repDefaults.bots>('bots', 'eschamp-bundle', {
 
 const bot1Name = computed(() => {
     if (!scoreboard?.data?.bot1?.id || !bots?.data) return null
-    return bots.data[scoreboard.data.bot1.id].Name
+    return bots.data[scoreboard.data.bot1.id]?.Name
 })
 const bot2Name = computed(() => {
     if (!scoreboard?.data?.bot2?.id || !bots?.data) return null
-    return bots.data[scoreboard.data.bot2.id].Name
+    return bots.data[scoreboard.data.bot2.id]?.Name
 })
 
 const container = ref<HTMLElement | null>(null)

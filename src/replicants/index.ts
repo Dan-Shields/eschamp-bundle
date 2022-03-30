@@ -40,3 +40,10 @@ export const scoreboard = {
         score: 0,
     },
 }
+
+export type Patron = {
+    Name: string
+    'Membership Type': string
+}
+
+export const patrons: Patron[] = []

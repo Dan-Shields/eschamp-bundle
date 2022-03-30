@@ -28,8 +28,8 @@ import { useReplicant } from 'nodecg-vue-composable'
 import anime from 'animejs'
 
 import * as repDefaults from '../../replicants'
+import { raceToImg } from './raceToImg'
 
-import * as races from '../assets/VS/races'
 import banner from '../assets/VS/Banner.png'
 import logo from '../assets/VS/ProBots Logo 2.png'
 
@@ -90,17 +90,6 @@ const animateIn = () => {
         delay: introDuration,
         easing: 'easeOutQuad',
     })
-}
-
-const raceToImg = (race: string) => {
-    switch (race) {
-        case 'Protoss':
-            return races.protoss.default
-        case 'Zerg':
-            return races.Zerg.default
-        case 'Terran':
-            return races.terran.default
-    }
 }
 
 const bot1Race = computed(() => {

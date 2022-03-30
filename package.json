@@ -2,8 +2,6 @@
     "name": "eschamp-bundle",
     "version": "1.0.0",
     "private": true,
-    "description": "",
-    "main": "index.js",
     "author": {
         "name": "Daniel Shields",
         "email": "hello@danielshields.uk",
@@ -47,6 +45,11 @@
             },
             {
                 "file": "vs.html",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "file": "stats.html",
                 "width": 1920,
                 "height": 1080
             }

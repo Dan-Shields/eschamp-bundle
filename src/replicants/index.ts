@@ -18,6 +18,14 @@ export type Bot = {
     Race?: string
     Image?: Attachment[]
     Intro?: Attachment[]
+    Stat1?: string
+    Stat1Val?: string
+    Stat2?: string
+    Stat2Val?: string
+    Stat3?: string
+    Stat3Val?: string
+    Stat4?: string
+    Stat4Val?: string
 }
 
 export const bots: { [index: string]: Bot } = {}

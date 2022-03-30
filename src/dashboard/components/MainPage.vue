@@ -4,7 +4,14 @@
     </el-row>
     <el-row :gutter="20">
         <el-col :span="12"><TickerControls /></el-col>
-        <el-col :span="12"><TimerControls /></el-col>
+        <el-col :span="12">
+            <el-row>
+                <TimerControls />
+            </el-row>
+            <el-row>
+                <IntroControls />
+            </el-row>
+        </el-col>
     </el-row>
 </template>
 
@@ -12,6 +19,7 @@
 import TickerControls from './TickerControls.vue'
 import TimerControls from './TimerControls.vue'
 import ScoreboardControls from './ScoreboardControls.vue'
+import IntroControls from './IntroControls.vue'
 </script>
 
 <style lang="scss" scoped>

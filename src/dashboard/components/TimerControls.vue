@@ -1,5 +1,5 @@
 <template>
-    <el-card v-if="timers && timers.data">
+    <el-card v-if="timers && timers.data" style="width: 100%">
         <template #header>Timers</template>
 
         <el-form label-width="140px">

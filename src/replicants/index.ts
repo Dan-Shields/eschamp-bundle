@@ -47,3 +47,5 @@ export type Patron = {
 }
 
 export const patrons: Patron[] = []
+
+export const introBot: 1 | 2 | null = null

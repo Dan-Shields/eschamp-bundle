@@ -21,13 +21,13 @@
                 </div>
                 <h1 class="top-text">{{ ticker.data.topText }}</h1>
                 <marquee-text
-                    v-if="bottomText && duration"
+                    v-if="marquee && marquee?.duration"
                     class="bottom-text"
                     :repeat="10"
-                    :duration="duration"
-                    :key="revision"
+                    :duration="marquee.duration"
+                    :key="marquee.revision"
                 >
-                    {{ bottomText }}
+                    {{ marquee.text }}
                 </marquee-text>
             </div>
         </div>
@@ -43,13 +43,14 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, onMounted, ref, watch } from 'vue'
+import { computed, onMounted } from 'vue'
 import MarqueeText from 'vue-marquee-text-component'
 import { useReplicant } from 'nodecg-vue-composable'
 import formatDuration from 'format-duration'
 import anime from 'animejs'
 
 import * as repDefaults from '../../replicants'
+import { useMarqueeText } from '../composables/marquee-text'
 
 // TICKER
 const ticker = useReplicant<typeof repDefaults.ticker>(
@@ -60,39 +61,7 @@ const ticker = useReplicant<typeof repDefaults.ticker>(
     }
 )
 
-const patrons = useReplicant<typeof repDefaults.patrons>(
-    'patrons',
-    'eschamp-bundle',
-    { defaultValue: repDefaults.patrons }
-)
-
-const revision = ref(0)
-watch(
-    () => ticker?.data,
-    (newVal, oldVal) => {
-        if (newVal?.bottomText !== oldVal?.bottomText) revision.value++
-    }
-)
-
-const bottomText = computed(() => {
-    let string = ''
-    if (ticker?.data) {
-        string = `${ticker.data?.bottomText
-            .trimEnd()
-            .split('\n')
-            .join(' | ')} | `
-    }
-    if (patrons?.data) {
-        string += `Patrons: ${patrons.data
-            ?.map((patron) => patron.Name)
-            .join(' // ')} | `
-    }
-    return string
-})
-const duration = computed(() => {
-    if (!bottomText.value || !ticker?.data) return null
-    return Math.round(bottomText.value.length / ticker?.data?.speed)
-})
+const marquee = useMarqueeText()
 
 // TIMERS
 const timers = useReplicant<typeof repDefaults.timers>(

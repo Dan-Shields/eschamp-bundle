@@ -37,6 +37,16 @@
                 >
                 </el-input>
             </el-form-item>
+            <el-form-item>
+                <el-button-group>
+                    <el-button type="success" @click="showTicker"
+                        >SHOW</el-button
+                    >
+                    <el-button type="danger" @click="hideTicker"
+                        >HIDE</el-button
+                    >
+                </el-button-group>
+            </el-form-item>
         </el-form>
     </el-card>
 </template>
@@ -52,4 +62,7 @@ const ticker = useReplicant<typeof repDefaults.ticker>(
         defaultValue: repDefaults.ticker,
     }
 )
+
+const showTicker = () => nodecg.sendMessage('show-main-ticker')
+const hideTicker = () => nodecg.sendMessage('hide-main-ticker')
 </script>

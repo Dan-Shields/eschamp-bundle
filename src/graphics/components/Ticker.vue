@@ -1,33 +1,43 @@
 <template>
     <div class="container" ref="container">
-        <div class="sponsors"></div>
-        <div class="ticker" v-if="ticker?.data && scoreboard?.data">
-            <div class="head2head">
-                <div>
-                    <h1>{{ bot1Name }}</h1>
-                    <h1 class="score">{{ scoreboard.data.bot1.score }}</h1>
-                </div>
-                <div>
-                    <h1>{{ bot2Name }}</h1>
-                    <h1 class="score">{{ scoreboard.data.bot2.score }}</h1>
-                </div>
+        <div class="slidein cta-slidein">
+            <div class="cta">
+                <h1>ESCHAMP.COM/JOIN</h1>
             </div>
-            <h1 class="top-text">{{ ticker.data.topText }}</h1>
-            <marquee-text
-                v-if="bottomText && duration"
-                class="bottom-text"
-                :repeat="10"
-                :duration="duration"
-                :key="revision"
-            >
-                {{ bottomText }}
-            </marquee-text>
         </div>
-        <div class="next-match-timer" v-if="timers?.data">
-            <h2>NEXT MATCH</h2>
-            <h1>
-                {{ nextMatchTimer }}
-            </h1>
+
+        <div class="slidein ticker-slidein">
+            <div class="ticker" v-if="ticker?.data && scoreboard?.data">
+                <div class="yellow-box"></div>
+                <div class="head2head">
+                    <div>
+                        <h1>{{ bot1Name }}</h1>
+                        <h1 class="score">{{ scoreboard.data.bot1.score }}</h1>
+                    </div>
+                    <div>
+                        <h1>{{ bot2Name }}</h1>
+                        <h1 class="score">{{ scoreboard.data.bot2.score }}</h1>
+                    </div>
+                </div>
+                <h1 class="top-text">{{ ticker.data.topText }}</h1>
+                <marquee-text
+                    v-if="bottomText && duration"
+                    class="bottom-text"
+                    :repeat="10"
+                    :duration="duration"
+                    :key="revision"
+                >
+                    {{ bottomText }}
+                </marquee-text>
+            </div>
+        </div>
+        <div class="slidein timer-slidein">
+            <div class="next-match-timer" v-if="timers?.data">
+                <h3>NEXT MATCH</h3>
+                <h1 style="margin-top: -5px">
+                    {{ nextMatchTimer }}
+                </h1>
+            </div>
         </div>
     </div>
 </template>
@@ -101,20 +111,46 @@ const bot2Name = computed(() => {
     return bots.data[scoreboard.data.bot2.id]?.Name
 })
 
-const container = ref<HTMLElement | null>(null)
-
-const animateIn = () => {
-    if (!container.value) return
-
-    anime({
-        targets: [container.value],
-        top: '935px',
-        easing: 'easeOutQuad',
-    })
-}
+const tl = anime.timeline({
+    easing: 'easeInOutExpo',
+    autoplay: false,
+})
 
 onMounted(() => {
-    animateIn()
+    const elements = Array.from(document.getElementsByClassName('slidein'))
+
+    elements.forEach((el, index) => {
+        if (!(el.firstChild instanceof HTMLElement)) return
+
+        const width = window.getComputedStyle(el.firstChild)?.width
+        if (!width) return
+
+        tl.add(
+            {
+                targets: el,
+                width,
+            },
+            index * 100
+        )
+    })
+
+    tl.play()
+})
+
+nodecg.listenFor('show-main-ticker', () => {
+    if (tl.currentTime === tl.duration) return
+    console.log('SHOWING ticker')
+
+    if (tl.direction === 'reverse') tl.reverse()
+    tl.play()
+})
+
+nodecg.listenFor('hide-main-ticker', () => {
+    if (tl.currentTime === 0) return
+    console.log('hiding ticker')
+
+    if (tl.direction === 'normal') tl.reverse()
+    tl.play()
 })
 </script>
 
@@ -123,40 +159,79 @@ onMounted(() => {
 
 .container {
     position: absolute;
-    top: 1080px;
+    top: 935px;
     left: 0;
     height: 107px;
 
     > * {
         position: absolute;
-    }
-    .ticker,
-    .next-match-timer {
         top: 0;
         height: 100%;
     }
+
+    .slidein {
+        overflow: hidden;
+        width: 0;
+
+        > * {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+        }
+
+        &.cta-slidein {
+            left: 24px;
+        }
+
+        &.ticker-slidein {
+            left: 370px;
+        }
+
+        &.timer-slidein {
+            left: 1650px;
+        }
+    }
 }
 
-.sponsors {
-    left: 24px;
-    width: 250px;
-    height: 8px;
-    background-color: colors.$yellow;
+.cta {
+    width: 336px;
+    height: 100%;
+    background-color: colors.$lightblue;
     bottom: 0;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > * {
+        margin: 0;
+        font-size: 1.55em;
+    }
 }
 
 .ticker {
-    left: 280px;
-    width: 1356px;
+    width: 1270px;
     background-color: colors.$blue;
     * {
         text-transform: uppercase;
     }
 
-    .head2head {
-        color: white;
+    .yellow-box {
         position: absolute;
-        left: 35px;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 65px;
+
+        background-color: colors.$yellow;
+    }
+
+    .head2head {
+        color: #9b9b9b;
+        position: absolute;
+        left: 80px;
         top: 15px;
 
         > div {
@@ -165,6 +240,11 @@ onMounted(() => {
             justify-content: space-between;
             align-items: baseline;
             gap: 15px;
+
+            &:first-child {
+                color: white;
+            }
+
             h1 {
                 margin: 0;
                 font-size: 1em;
@@ -181,11 +261,11 @@ onMounted(() => {
 
     .top-text,
     .bottom-text {
-        width: 75%;
+        width: 900px;
         font-weight: 900;
         position: absolute;
 
-        left: 285px;
+        left: 350px;
     }
 
     .top-text {
@@ -197,24 +277,25 @@ onMounted(() => {
 
     .bottom-text {
         color: #53aee0;
-        font-size: 20px;
-        top: 65px;
+        font-size: 23px;
+        top: 63px;
     }
 }
 
 .next-match-timer {
-    left: 1650px;
     width: 250px;
     background-color: colors.$yellow;
     color: colors.$blue;
 
-    h1,
-    h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    > * {
         width: 100%;
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1.2em;
         margin: 0;
-        margin-top: 8px;
     }
     h1 {
         font-size: 3em;

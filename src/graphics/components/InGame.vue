@@ -62,6 +62,8 @@ const introRef = ref<HTMLElement>()
 
 let introAnim: anime.AnimeInstance
 
+let autoCloseTimeout: NodeJS.Timeout
+
 const showIntro = () => {
     if (!introAnim) return
 
@@ -86,6 +88,13 @@ const showIntro = () => {
 
     if (introAnim.direction !== 'normal') introAnim.reverse()
     setTimeout(introAnim.play, 100)
+
+    if (autoCloseTimeout) clearTimeout(autoCloseTimeout)
+
+    autoCloseTimeout = setTimeout(() => {
+        introBot.data = null
+        introBot.save()
+    }, 8000)
 }
 
 const hideIntro = () => {
@@ -96,6 +105,8 @@ const hideIntro = () => {
 
     if (introAnim.direction === 'normal') introAnim.reverse()
     introAnim.play()
+
+    if (autoCloseTimeout) clearTimeout(autoCloseTimeout)
 }
 
 onMounted(() => {

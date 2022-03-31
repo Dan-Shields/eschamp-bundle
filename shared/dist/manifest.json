@@ -1,6 +1,6 @@
 {
   "src/graphics/in-game.ts": {
-    "file": "assets/in-game.4674a926.js",
+    "file": "assets/in-game.beaa3f96.js",
     "src": "src/graphics/in-game.ts",
     "isEntry": true,
     "imports": [
@@ -10,7 +10,7 @@
       "__commonjsHelpers.2cf1d77b.js"
     ],
     "css": [
-      "assets/in-game.2962f3b7.css",
+      "assets/in-game.14f2ce69.css",
       "assets/font.7449e257.css"
     ]
   },
@@ -43,7 +43,7 @@
     ]
   },
   "src/graphics/vs.ts": {
-    "file": "assets/vs.2c59419c.js",
+    "file": "assets/vs.745dd376.js",
     "src": "src/graphics/vs.ts",
     "isEntry": true,
     "imports": [
@@ -52,7 +52,7 @@
       "_raceToImg.9c2a4c18.js"
     ],
     "css": [
-      "assets/vs.fac3216a.css",
+      "assets/vs.0dbf19fa.css",
       "assets/font.7449e257.css"
     ],
     "assets": [

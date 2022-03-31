@@ -1,7 +1,7 @@
 <template>
     <img :src="logo" class="logo" />
     <img :src="banner" class="banner" ref="bannerRef" />
-    <transition><h1 class="vs">VERSUS</h1></transition>
+    <h1 class="vs">VERSUS</h1>
     <div class="bot left" v-show="bot1" ref="leftBot">
         <img class="avatar" :src="bot1?.Image?.[0].url ?? ''" />
         <div class="box">

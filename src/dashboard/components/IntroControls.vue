@@ -4,17 +4,11 @@
 
         <el-row :gutter="20">
             <el-col :span="12" class="switch" @click="change1">
-                <el-switch
-                    :modelValue="introBot.data === 1"
-                    :disabled="introBot.data === 2"
-                ></el-switch>
+                <el-switch :modelValue="introBot.data === 1"></el-switch>
                 Bot 1
             </el-col>
             <el-col :span="12" class="switch" @click="change2">
-                <el-switch
-                    :modelValue="introBot.data === 2"
-                    :disabled="introBot.data === 1"
-                ></el-switch>
+                <el-switch :modelValue="introBot.data === 2"></el-switch>
                 Bot 2
             </el-col>
         </el-row>
@@ -33,14 +27,12 @@ const introBot = useReplicant<typeof repDefaults.introBot>(
 
 const change1 = (value: boolean) => {
     if (!introBot) return
-    if (introBot.data === 2) return
 
     introBot.data = introBot.data === 1 ? null : 1
     introBot.save()
 }
 const change2 = (value: boolean) => {
     if (!introBot) return
-    if (introBot.data === 1) return
 
     introBot.data = introBot.data === 2 ? null : 2
     introBot.save()

@@ -1,7 +1,7 @@
 <template>
     <img :src="logo" class="logo" />
     <img :src="banner" class="banner" ref="bannerRef" />
-    <transition><h1 class="vs" v-if="showVs">VERSUS</h1></transition>
+    <transition><h1 class="vs">VERSUS</h1></transition>
     <div class="bot left" v-show="bot1" ref="leftBot">
         <img class="avatar" :src="bot1?.Image?.[0].url ?? ''" />
         <div class="box">
@@ -56,8 +56,6 @@ const leftBot = ref<HTMLElement | null>(null)
 const rightBot = ref<HTMLElement | null>(null)
 const bannerRef = ref<HTMLElement | null>(null)
 
-const showVs = ref(false)
-
 const animateIn = () => {
     if (!leftBot.value || !rightBot.value || !bannerRef.value) {
         setTimeout(() => animateIn(), 50)
@@ -66,28 +64,18 @@ const animateIn = () => {
 
     const margin = '160px'
 
-    const introDuration = 1000
-
-    anime({
-        targets: [bannerRef.value],
-        left: '0',
-        easing: 'easeOutQuad',
-        duration: introDuration,
-        complete: () => {
-            showVs.value = true
-        },
-    })
+    const delay = 300
 
     anime({
         targets: [leftBot.value],
         left: margin,
-        delay: introDuration,
+        delay,
         easing: 'easeOutQuad',
     })
     anime({
         targets: [rightBot.value],
         right: margin,
-        delay: introDuration,
+        delay,
         easing: 'easeOutQuad',
     })
 }
@@ -112,7 +100,7 @@ onMounted(() => {
 .banner {
     position: absolute;
     top: 450px;
-    left: -1920px;
+    left: 0;
 }
 
 .logo {

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.scoreboard = exports.bots = exports.timers = exports.ticker = void 0;
+exports.introBot = exports.patrons = exports.scoreboard = exports.bots = exports.timers = exports.ticker = void 0;
 exports.ticker = {
     topText: '',
     bottomText: '',
@@ -21,3 +21,5 @@ exports.scoreboard = {
         score: 0,
     },
 };
+exports.patrons = [];
+exports.introBot = null;

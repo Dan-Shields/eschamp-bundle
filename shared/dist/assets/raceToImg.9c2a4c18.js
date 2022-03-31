@@ -1,0 +1,1 @@
+var e="/bundles/eschamp-bundle/shared/dist/assets/protoss.366d389a.png",r="/bundles/eschamp-bundle/shared/dist/assets/terran.a4da7433.png",a="/bundles/eschamp-bundle/shared/dist/assets/Zerg.0c813d18.png";function n(s){switch(s){case"Protoss":return e;case"Zerg":return a;case"Terran":return r}}export{n as r};

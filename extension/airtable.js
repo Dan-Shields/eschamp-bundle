@@ -39,18 +39,34 @@ function syncAirtable() {
     airtable_1.default.configure({
         apiKey: process.env.AIRTABLE_API_KEY,
     });
-    const base = airtable_1.default.base('appfSOqFLhZ2iq4GN');
+    const mainBase = airtable_1.default.base('appfSOqFLhZ2iq4GN');
+    const creditsBase = airtable_1.default.base('appHuPYAMch4gfqhi');
     const bots = (0, nodecg_util_1.get)().Replicant('bots', { defaultValue: repDefaults.bots });
+    const patrons = (0, nodecg_util_1.get)().Replicant('patrons', {
+        defaultValue: repDefaults.patrons,
+    });
     setInterval(() => {
-        const newBots = {};
-        base('Bots')
+        mainBase('Bots')
             .select()
             .all((err, records) => {
+            const newBots = {};
             records === null || records === void 0 ? void 0 : records.forEach((record) => {
                 newBots[record.id] = record.fields;
             });
             if (!err && !lodash_1.default.isEqual(newBots, bots.value)) {
                 bots.value = newBots;
+            }
+        });
+        creditsBase('Members')
+            .select({ fields: ['Name', 'Membership Type'] })
+            .all((err, records) => {
+            const newPatrons = records === null || records === void 0 ? void 0 : records.map((record) => {
+                return record.fields;
+            });
+            if (!err &&
+                newPatrons &&
+                !lodash_1.default.isEqual(newPatrons, patrons.value)) {
+                patrons.value = newPatrons;
             }
         });
     }, 1000);

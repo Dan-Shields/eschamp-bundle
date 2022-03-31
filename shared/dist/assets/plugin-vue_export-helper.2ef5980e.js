@@ -1,1 +1,0 @@
-const c={topText:"",bottomText:"",speed:5},r={nextMatchPlaying:!1,nextMatch:300},n={},b={bot1:{id:"",score:0},bot2:{id:"",score:0}};var x=(t,s)=>{const o=t.__vccOpts||t;for(const[e,a]of s)o[e]=a;return o};export{x as _,r as a,n as b,b as s,c as t};

@@ -29,7 +29,7 @@ import { computed } from 'vue'
 import { useReplicant } from 'nodecg-vue-composable'
 
 import * as repDefaults from '../../replicants'
-import { raceToImg } from './raceToImg'
+import { raceToImg } from '../composables/raceToImg'
 
 const scoreboard = useReplicant('scoreboard', 'eschamp-bundle', {
     defaultValue: repDefaults.scoreboard,

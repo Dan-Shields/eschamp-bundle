@@ -8,14 +8,21 @@
 
         <div class="slidein ticker-slidein">
             <div class="ticker" v-if="ticker?.data && scoreboard?.data">
-                <div class="yellow-box"></div>
+                <div class="yellow-box">
+                    <div class="race-container">
+                        <img v-if="bot1Race" class="race" :src="bot1Race" />
+                    </div>
+                    <div class="race-container">
+                        <img v-if="bot2Race" class="race" :src="bot2Race" />
+                    </div>
+                </div>
                 <div class="head2head">
                     <div>
-                        <h1>{{ bot1Name }}</h1>
+                        <h1>{{ bot1?.Name }}</h1>
                         <h1 class="score">{{ scoreboard.data.bot1.score }}</h1>
                     </div>
                     <div>
-                        <h1>{{ bot2Name }}</h1>
+                        <h1>{{ bot2?.Name }}</h1>
                         <h1 class="score">{{ scoreboard.data.bot2.score }}</h1>
                     </div>
                 </div>
@@ -51,6 +58,7 @@ import anime from 'animejs'
 
 import * as repDefaults from '../../replicants'
 import { useMarqueeText } from '../composables/marquee-text'
+import { raceToImg } from '../composables/raceToImg'
 
 // TICKER
 const ticker = useReplicant<typeof repDefaults.ticker>(
@@ -88,13 +96,21 @@ const bots = useReplicant<typeof repDefaults.bots>('bots', 'eschamp-bundle', {
     defaultValue: repDefaults.bots,
 })
 
-const bot1Name = computed(() => {
+const bot1 = computed(() => {
     if (!scoreboard?.data?.bot1?.id || !bots?.data) return null
-    return bots.data[scoreboard.data.bot1.id]?.Name
+    return bots.data[scoreboard.data.bot1.id]
 })
-const bot2Name = computed(() => {
+const bot2 = computed(() => {
     if (!scoreboard?.data?.bot2?.id || !bots?.data) return null
-    return bots.data[scoreboard.data.bot2.id]?.Name
+    return bots.data[scoreboard.data.bot2.id]
+})
+const bot1Race = computed(() => {
+    if (!bot1?.value?.Race) return null
+    return raceToImg(bot1.value.Race)
+})
+const bot2Race = computed(() => {
+    if (!bot2?.value?.Race) return null
+    return raceToImg(bot2.value.Race)
 })
 
 const tl = anime.timeline({
@@ -212,6 +228,23 @@ nodecg.listenFor('hide-main-ticker', () => {
         width: 65px;
 
         background-color: colors.$yellow;
+        padding: 5px;
+        box-sizing: border-box;
+
+        .race-container {
+            width: 100%;
+            height: 50%;
+            margin: 0;
+            box-sizing: border-box;
+            position: relative;
+            .race {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 80%;
+            }
+        }
     }
 
     .head2head {

@@ -15,44 +15,45 @@
     ]
   },
   "src/graphics/stats.ts": {
-    "file": "assets/stats.784a7b91.js",
+    "file": "assets/stats.01267559.js",
     "src": "src/graphics/stats.ts",
     "isEntry": true,
     "imports": [
       "_plugin-vue_export-helper.ac77b367.js",
-      "_raceToImg.9c2a4c18.js"
+      "_raceToImg.18587f08.js"
     ],
     "css": [
-      "assets/stats.76c1d570.css",
+      "assets/stats.44abcf87.css",
       "assets/font.7449e257.css"
     ]
   },
   "src/graphics/ticker.ts": {
-    "file": "assets/ticker.2dbce738.js",
+    "file": "assets/ticker.6a366abe.js",
     "src": "src/graphics/ticker.ts",
     "isEntry": true,
     "imports": [
       "_plugin-vue_export-helper.ac77b367.js",
       "_marquee-text.58781fed.js",
       "__commonjsHelpers.2cf1d77b.js",
-      "_anime.es.4ca930c3.js"
+      "_anime.es.4ca930c3.js",
+      "_raceToImg.18587f08.js"
     ],
     "css": [
-      "assets/ticker.65fdb12d.css",
+      "assets/ticker.db2cf96f.css",
       "assets/font.7449e257.css"
     ]
   },
   "src/graphics/vs.ts": {
-    "file": "assets/vs.745dd376.js",
+    "file": "assets/vs.d587b934.js",
     "src": "src/graphics/vs.ts",
     "isEntry": true,
     "imports": [
       "_plugin-vue_export-helper.ac77b367.js",
       "_anime.es.4ca930c3.js",
-      "_raceToImg.9c2a4c18.js"
+      "_raceToImg.18587f08.js"
     ],
     "css": [
-      "assets/vs.0dbf19fa.css",
+      "assets/vs.fdc3c094.css",
       "assets/font.7449e257.css"
     ],
     "assets": [
@@ -88,8 +89,8 @@
   "__commonjsHelpers.2cf1d77b.js": {
     "file": "assets/_commonjsHelpers.2cf1d77b.js"
   },
-  "_raceToImg.9c2a4c18.js": {
-    "file": "assets/raceToImg.9c2a4c18.js",
+  "_raceToImg.18587f08.js": {
+    "file": "assets/raceToImg.18587f08.js",
     "assets": [
       "assets/protoss.366d389a.png",
       "assets/terran.a4da7433.png",

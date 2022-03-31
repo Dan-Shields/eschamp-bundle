@@ -36,7 +36,7 @@ import { useReplicant } from 'nodecg-vue-composable'
 import anime from 'animejs'
 
 import * as repDefaults from '../../replicants'
-import { raceToImg } from './raceToImg'
+import { raceToImg } from '../composables/raceToImg'
 
 import banner from '../assets/VS/Banner.png'
 import logo from '../assets/VS/ProBots Logo 2.png'

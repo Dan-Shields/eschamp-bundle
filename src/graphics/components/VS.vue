@@ -5,19 +5,27 @@
     <div class="bot left" v-show="bot1" ref="leftBot">
         <img class="avatar" :src="bot1?.Image?.[0].url ?? ''" />
         <div class="box">
-            <img v-if="bot1Race" class="race" :src="bot1Race" />
+            <div class="race-container">
+                <img v-if="bot1Race" class="race" :src="bot1Race" />
+            </div>
             <h1 class="name">{{ bot1?.Name }}</h1>
-            <h4 class="author">{{ bot1?.Author }}</h4>
-            <h4 class="lang">{{ bot1?.Language }}</h4>
+            <div class="info">
+                <h4 class="author">{{ bot1?.Author }}</h4>
+                <h4 class="lang">{{ bot1?.Language }}</h4>
+            </div>
         </div>
     </div>
     <div class="bot right" v-show="bot2" ref="rightBot">
         <img class="avatar" :src="bot2?.Image?.[0].url ?? ''" />
         <div class="box">
-            <img v-if="bot2Race" class="race" :src="bot2Race" />
+            <div class="race-container">
+                <img v-if="bot2Race" class="race" :src="bot2Race" />
+            </div>
             <h1 class="name">{{ bot2?.Name }}</h1>
-            <h4 class="author">{{ bot2?.Author }}</h4>
-            <h4 class="lang">{{ bot2?.Language }}</h4>
+            <div class="info">
+                <h4 class="author">{{ bot2?.Author }}</h4>
+                <h4 class="lang">{{ bot2?.Language }}</h4>
+            </div>
         </div>
     </div>
 </template>
@@ -134,7 +142,7 @@ onMounted(() => {
     $width: 500px;
     $margin: -$width;
     position: absolute;
-    top: 200px;
+    top: 230px;
     height: 800px;
     width: $width;
     overflow: hidden;
@@ -161,26 +169,54 @@ onMounted(() => {
         width: 100%;
         bottom: 0;
         left: 0;
-        height: 175px;
-        padding-left: 125px;
+        height: 185px;
         color: colors.$blue;
 
         font-size: 1.25em;
 
-        .race {
+        .race-container {
             position: absolute;
-            top: 50%;
-            left: 62px;
-            height: 50%;
-            transform: translate(-50%, -50%);
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 125px;
+            background-color: colors.$lightblue;
+            .race {
+                position: absolute;
+                top: 50%;
+                left: 62px;
+                height: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
 
-        h1 {
-            margin-bottom: 10px;
+        .name {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 500px - 125px;
+            padding: 20px 25px;
+            box-sizing: border-box;
+
+            margin: 0;
         }
 
-        h4 {
-            margin: 8px 0;
+        .info {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 93px;
+            background-color: colors.$blue;
+            width: 500px - 125px;
+            color: white;
+            padding: 15px 25px;
+            box-sizing: border-box;
+
+            h4 {
+                margin: 0;
+                margin-bottom: 12px;
+                font-weight: normal;
+            }
         }
     }
 }

@@ -43,7 +43,7 @@
     ]
   },
   "src/graphics/vs.ts": {
-    "file": "assets/vs.52fa0ac3.js",
+    "file": "assets/vs.2c59419c.js",
     "src": "src/graphics/vs.ts",
     "isEntry": true,
     "imports": [
@@ -52,7 +52,7 @@
       "_raceToImg.9c2a4c18.js"
     ],
     "css": [
-      "assets/vs.9557f3a9.css",
+      "assets/vs.fac3216a.css",
       "assets/font.7449e257.css"
     ],
     "assets": [

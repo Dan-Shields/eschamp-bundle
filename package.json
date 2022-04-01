@@ -57,6 +57,11 @@
                 "file": "in-game.html",
                 "width": 1920,
                 "height": 1080
+            },
+            {
+                "file": "match-list.html",
+                "width": 1920,
+                "height": 1080
             }
         ],
         "dashboardPanels": [

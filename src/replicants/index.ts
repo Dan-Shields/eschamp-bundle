@@ -49,3 +49,13 @@ export type Patron = {
 export const patrons: Patron[] = []
 
 export const introBot: 1 | 2 | null = null
+
+export type Match = {
+    bot1: string | null
+    bot2: string | null
+}
+
+export const matches: Match[] = Array.from({ length: 4 }, () => ({
+    bot1: null,
+    bot2: null,
+}))

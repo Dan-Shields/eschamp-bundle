@@ -62,6 +62,31 @@
                 "file": "match-list.html",
                 "width": 1920,
                 "height": 1080
+            },
+            {
+                "file": "main-bracket.html",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "file": "losers-bracket.html",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "file": "finals-bracket.html",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "file": "gauntlet-bracket-1.html",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "file": "gauntlet-bracket-2.html",
+                "width": 1920,
+                "height": 1080
             }
         ],
         "dashboardPanels": [

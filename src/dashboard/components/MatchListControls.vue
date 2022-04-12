@@ -14,21 +14,29 @@
         <el-row>
             <el-col v-for="i in 4" :span="6">
                 <h3>Match {{ i }}</h3>
-                <el-select-v2
+                <el-select
                     v-model="matches.data[i - 1].bot1"
-                    :options="botOptions"
                     placeholder="Please select"
                     clearable
                     filterable
-                />
+                    ><el-option
+                        v-for="bot in botOptions"
+                        :key="bot.value"
+                        :label="bot.label"
+                        :value="bot.value"
+                /></el-select>
                 <div style="text-align: center; width: 100%">vs</div>
-                <el-select-v2
+                <el-select
                     v-model="matches.data[i - 1].bot2"
-                    :options="botOptions"
                     placeholder="Please select"
                     clearable
                     filterable
-                />
+                    ><el-option
+                        v-for="bot in botOptions"
+                        :key="bot.value"
+                        :label="bot.label"
+                        :value="bot.value"
+                /></el-select>
             </el-col>
             <el-divider direction="vertical" />
         </el-row>

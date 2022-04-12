@@ -105,11 +105,11 @@ const bot2 = computed(() => {
     return bots.data[scoreboard.data.bot2.id]
 })
 const bot1Race = computed(() => {
-    if (!bot1?.value?.Race) return null
+    if (!bot1?.value) return null
     return raceToImg(bot1.value.Race)
 })
 const bot2Race = computed(() => {
-    if (!bot2?.value?.Race) return null
+    if (!bot2?.value) return null
     return raceToImg(bot2.value.Race)
 })
 

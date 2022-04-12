@@ -49,8 +49,7 @@ const bot = computed(() => {
 })
 
 const botRace = computed(() => {
-    if (!bot?.value?.Race) return null
-    return raceToImg(bot.value.Race)
+    return raceToImg(bot.value?.Race)
 })
 </script>
 

@@ -47,13 +47,13 @@ const matchesPopulated = computed(() => {
         bot1: match.bot1
             ? {
                   Name: bots.data?.[match.bot1]?.Name,
-                  race: raceToImg(bots.data?.[match.bot1]?.Race ?? '', true),
+                  race: raceToImg(bots.data?.[match.bot1]?.Race, true),
               }
             : null,
         bot2: match.bot2
             ? {
                   Name: bots.data?.[match.bot2]?.Name,
-                  race: raceToImg(bots.data?.[match.bot2]?.Race ?? '', true),
+                  race: raceToImg(bots.data?.[match.bot2]?.Race, true),
               }
             : null,
     }))

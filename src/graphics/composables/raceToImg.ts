@@ -1,6 +1,6 @@
-import * as races from '../assets/VS/races'
+import * as races from '../assets/races'
 
-export function raceToImg(race: string, white = false) {
+export function raceToImg(race?: string, white = false) {
     switch (race) {
         case 'Protoss':
             return !white ? races.protoss.default : races.protoss_white.default
@@ -8,5 +8,7 @@ export function raceToImg(race: string, white = false) {
             return !white ? races.Zerg.default : races.Zerg_white.default
         case 'Terran':
             return !white ? races.terran.default : races.terran_white.default
+        default:
+            return !white ? races.random.default : races.random_white.default
     }
 }

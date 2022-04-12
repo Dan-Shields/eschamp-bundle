@@ -1,59 +1,150 @@
 {
+  "src/graphics/finals-bracket.ts": {
+    "file": "assets/finals-bracket.589e65e7.js",
+    "src": "src/graphics/finals-bracket.ts",
+    "isEntry": true,
+    "imports": [
+      "_plugin-vue_export-helper.c1af9d5a.js"
+    ],
+    "css": [
+      "assets/finals-bracket.feda0c14.css",
+      "assets/font.7449e257.css"
+    ],
+    "assets": [
+      "assets/Finals.6a81d7e2.png"
+    ]
+  },
+  "src/graphics/gauntlet-bracket-1.ts": {
+    "file": "assets/gauntlet-bracket-1.c9a9f3a3.js",
+    "src": "src/graphics/gauntlet-bracket-1.ts",
+    "isEntry": true,
+    "imports": [
+      "_plugin-vue_export-helper.c1af9d5a.js"
+    ],
+    "css": [
+      "assets/gauntlet-bracket-1.67799d42.css",
+      "assets/font.7449e257.css"
+    ],
+    "assets": [
+      "assets/Gauntlet_1.ea95534b.png"
+    ]
+  },
+  "src/graphics/gauntlet-bracket-2.ts": {
+    "file": "assets/gauntlet-bracket-2.fdd7790f.js",
+    "src": "src/graphics/gauntlet-bracket-2.ts",
+    "isEntry": true,
+    "imports": [
+      "_plugin-vue_export-helper.c1af9d5a.js"
+    ],
+    "css": [
+      "assets/gauntlet-bracket-2.52dd9df8.css",
+      "assets/font.7449e257.css"
+    ],
+    "assets": [
+      "assets/Gauntlet_2.f3d4dd25.png"
+    ]
+  },
   "src/graphics/in-game.ts": {
-    "file": "assets/in-game.beaa3f96.js",
+    "file": "assets/in-game.55223265.js",
     "src": "src/graphics/in-game.ts",
     "isEntry": true,
     "imports": [
-      "_plugin-vue_export-helper.ac77b367.js",
-      "_marquee-text.58781fed.js",
+      "_plugin-vue_export-helper.c1af9d5a.js",
+      "_marquee-text.2c1485c5.js",
       "_anime.es.4ca930c3.js",
       "__commonjsHelpers.2cf1d77b.js"
     ],
     "css": [
-      "assets/in-game.14f2ce69.css",
+      "assets/in-game.c479e93b.css",
       "assets/font.7449e257.css"
     ]
   },
+  "src/graphics/losers-bracket.ts": {
+    "file": "assets/losers-bracket.bd0886d7.js",
+    "src": "src/graphics/losers-bracket.ts",
+    "isEntry": true,
+    "imports": [
+      "_plugin-vue_export-helper.c1af9d5a.js"
+    ],
+    "css": [
+      "assets/losers-bracket.a9bf64aa.css",
+      "assets/font.7449e257.css"
+    ],
+    "assets": [
+      "assets/Losers.96342f3c.png"
+    ]
+  },
+  "src/graphics/main-bracket.ts": {
+    "file": "assets/main-bracket.87e29187.js",
+    "src": "src/graphics/main-bracket.ts",
+    "isEntry": true,
+    "imports": [
+      "_plugin-vue_export-helper.c1af9d5a.js"
+    ],
+    "css": [
+      "assets/main-bracket.022cf487.css",
+      "assets/font.7449e257.css"
+    ],
+    "assets": [
+      "assets/Main.c22246a1.png"
+    ]
+  },
+  "src/graphics/match-list.ts": {
+    "file": "assets/match-list.dce49347.js",
+    "src": "src/graphics/match-list.ts",
+    "isEntry": true,
+    "imports": [
+      "_plugin-vue_export-helper.c1af9d5a.js",
+      "_raceToImg.c9ef94a0.js"
+    ],
+    "css": [
+      "assets/match-list.d8e02dff.css",
+      "assets/font.7449e257.css"
+    ],
+    "assets": [
+      "assets/background.e3000a6a.png"
+    ]
+  },
   "src/graphics/stats.ts": {
-    "file": "assets/stats.01267559.js",
+    "file": "assets/stats.e06c2be6.js",
     "src": "src/graphics/stats.ts",
     "isEntry": true,
     "imports": [
-      "_plugin-vue_export-helper.ac77b367.js",
-      "_raceToImg.18587f08.js"
+      "_plugin-vue_export-helper.c1af9d5a.js",
+      "_raceToImg.c9ef94a0.js"
     ],
     "css": [
-      "assets/stats.44abcf87.css",
+      "assets/stats.bbb086b3.css",
       "assets/font.7449e257.css"
     ]
   },
   "src/graphics/ticker.ts": {
-    "file": "assets/ticker.6a366abe.js",
+    "file": "assets/ticker.af917931.js",
     "src": "src/graphics/ticker.ts",
     "isEntry": true,
     "imports": [
-      "_plugin-vue_export-helper.ac77b367.js",
-      "_marquee-text.58781fed.js",
+      "_plugin-vue_export-helper.c1af9d5a.js",
+      "_marquee-text.2c1485c5.js",
       "__commonjsHelpers.2cf1d77b.js",
       "_anime.es.4ca930c3.js",
-      "_raceToImg.18587f08.js"
+      "_raceToImg.c9ef94a0.js"
     ],
     "css": [
-      "assets/ticker.db2cf96f.css",
+      "assets/ticker.08af58c9.css",
       "assets/font.7449e257.css"
     ]
   },
   "src/graphics/vs.ts": {
-    "file": "assets/vs.d587b934.js",
+    "file": "assets/vs.b61fd2c8.js",
     "src": "src/graphics/vs.ts",
     "isEntry": true,
     "imports": [
-      "_plugin-vue_export-helper.ac77b367.js",
+      "_plugin-vue_export-helper.c1af9d5a.js",
       "_anime.es.4ca930c3.js",
-      "_raceToImg.18587f08.js"
+      "_raceToImg.c9ef94a0.js"
     ],
     "css": [
-      "assets/vs.fdc3c094.css",
+      "assets/vs.12c683fc.css",
       "assets/font.7449e257.css"
     ],
     "assets": [
@@ -62,25 +153,25 @@
     ]
   },
   "src/dashboard/control-panel.ts": {
-    "file": "assets/control-panel.50e78230.js",
+    "file": "assets/control-panel.752471ca.js",
     "src": "src/dashboard/control-panel.ts",
     "isEntry": true,
     "imports": [
-      "_plugin-vue_export-helper.ac77b367.js",
+      "_plugin-vue_export-helper.c1af9d5a.js",
       "__commonjsHelpers.2cf1d77b.js"
     ],
     "css": [
-      "assets/control-panel.06a725e3.css"
+      "assets/control-panel.257c90a8.css"
     ]
   },
-  "_plugin-vue_export-helper.ac77b367.js": {
-    "file": "assets/plugin-vue_export-helper.ac77b367.js"
+  "_plugin-vue_export-helper.c1af9d5a.js": {
+    "file": "assets/plugin-vue_export-helper.c1af9d5a.js"
   },
-  "_marquee-text.58781fed.js": {
-    "file": "assets/marquee-text.58781fed.js",
+  "_marquee-text.2c1485c5.js": {
+    "file": "assets/marquee-text.2c1485c5.js",
     "imports": [
       "__commonjsHelpers.2cf1d77b.js",
-      "_plugin-vue_export-helper.ac77b367.js"
+      "_plugin-vue_export-helper.c1af9d5a.js"
     ]
   },
   "_anime.es.4ca930c3.js": {
@@ -89,12 +180,17 @@
   "__commonjsHelpers.2cf1d77b.js": {
     "file": "assets/_commonjsHelpers.2cf1d77b.js"
   },
-  "_raceToImg.18587f08.js": {
-    "file": "assets/raceToImg.18587f08.js",
+  "_raceToImg.c9ef94a0.js": {
+    "file": "assets/raceToImg.c9ef94a0.js",
     "assets": [
       "assets/protoss.366d389a.png",
+      "assets/protoss_white.77d47018.png",
       "assets/terran.a4da7433.png",
-      "assets/Zerg.0c813d18.png"
+      "assets/terran_white.63bc1b75.png",
+      "assets/Zerg.0c813d18.png",
+      "assets/Zerg_white.3368773b.png",
+      "assets/random.092297c5.png",
+      "assets/random_white.8a563c4b.png"
     ]
   }
 }

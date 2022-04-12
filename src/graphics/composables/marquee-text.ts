@@ -26,9 +26,9 @@ export function useMarqueeText() {
                 .join(' | ')} | `
         }
         if (patrons?.data) {
-            string += `Patrons: ${patrons.data
+            string += `<span style="color: white">Members:</span> ${patrons.data
                 ?.map((patron) => patron.Name)
-                .join(' // ')} | `
+                .join(' <span style="color: white">//</span> ')} | `
         }
         return string
     })

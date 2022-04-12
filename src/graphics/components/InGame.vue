@@ -12,7 +12,7 @@
                 :duration="marquee.duration"
                 :key="marquee.revision"
             >
-                {{ marquee.text }}
+                <span v-html="marquee.text"></span>
             </marquee-text>
             <div class="yellow-bookend"></div>
         </div>
@@ -226,6 +226,6 @@ if (introBot) {
 
 <style>
 .marquee-text-text {
-    padding-right: 4px;
+    padding-right: 8px;
 }
 </style>

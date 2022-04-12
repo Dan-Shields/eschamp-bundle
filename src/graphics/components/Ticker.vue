@@ -34,7 +34,7 @@
                     :duration="marquee.duration"
                     :key="marquee.revision"
                 >
-                    {{ marquee.text }}
+                    <span v-html="marquee.text"></span>
                 </marquee-text>
             </div>
         </div>
@@ -248,7 +248,7 @@ nodecg.listenFor('hide-main-ticker', () => {
     }
 
     .head2head {
-        color: #9b9b9b;
+        color: white;
         position: absolute;
         left: 80px;
         top: 15px;
@@ -259,10 +259,6 @@ nodecg.listenFor('hide-main-ticker', () => {
             justify-content: space-between;
             align-items: baseline;
             gap: 15px;
-
-            &:first-child {
-                color: white;
-            }
 
             h1 {
                 margin: 0;
@@ -324,6 +320,6 @@ nodecg.listenFor('hide-main-ticker', () => {
 
 <style>
 .marquee-text-text {
-    padding-right: 4px;
+    padding-right: 8px;
 }
 </style>

@@ -65,7 +65,7 @@ const matchesPopulated = computed(() => {
 
 .match-list {
     position: absolute;
-    top: 0;
+    top: 72px;
     left: 0;
     height: 100%;
     width: 100%;

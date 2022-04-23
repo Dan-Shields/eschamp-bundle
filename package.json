@@ -87,6 +87,11 @@
                 "file": "gauntlet-bracket-2.html",
                 "width": 1920,
                 "height": 1080
+            },
+            {
+                "file": "credits.html",
+                "width": 1920,
+                "height": 1080
             }
         ],
         "dashboardPanels": [

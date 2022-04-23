@@ -17,6 +17,9 @@
         <el-row>
             <el-col><MatchListControls /></el-col>
         </el-row>
+        <el-row>
+            <el-col><CreditsControls /></el-col>
+        </el-row>
     </div>
 </template>
 
@@ -26,6 +29,7 @@ import TimerControls from './TimerControls.vue'
 import ScoreboardControls from './ScoreboardControls.vue'
 import IntroControls from './IntroControls.vue'
 import MatchListControls from './MatchListControls.vue'
+import CreditsControls from './CreditsControls.vue'
 </script>
 
 <style lang="scss" scoped>

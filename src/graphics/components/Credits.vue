@@ -43,7 +43,7 @@ const setup = () => {
 
         anime({
             targets: [creditsRef.value],
-            translateY: `${-height - 552}px`,
+            translateY: `${-height - 600}px`,
             duration: (height / 50) * 1000,
             easing: 'linear',
         })

@@ -1,23 +1,23 @@
 {
   "src/graphics/credits.ts": {
-    "file": "assets/credits.fd8a8b69.js",
+    "file": "assets/credits.f68a642d.js",
     "src": "src/graphics/credits.ts",
     "isEntry": true,
     "imports": [
-      "_plugin-vue_export-helper.d3982ab3.js",
+      "_plugin-vue_export-helper.45550751.js",
       "_anime.es.4ca930c3.js"
     ],
     "css": [
-      "assets/credits.accf68a4.css",
+      "assets/credits.a3ada37d.css",
       "assets/font.7449e257.css"
     ]
   },
   "src/graphics/finals-bracket.ts": {
-    "file": "assets/finals-bracket.42ca2607.js",
+    "file": "assets/finals-bracket.882194f5.js",
     "src": "src/graphics/finals-bracket.ts",
     "isEntry": true,
     "imports": [
-      "_plugin-vue_export-helper.d3982ab3.js"
+      "_plugin-vue_export-helper.45550751.js"
     ],
     "css": [
       "assets/finals-bracket.feda0c14.css",
@@ -28,11 +28,11 @@
     ]
   },
   "src/graphics/gauntlet-bracket-1.ts": {
-    "file": "assets/gauntlet-bracket-1.2a06b073.js",
+    "file": "assets/gauntlet-bracket-1.0fa40a9a.js",
     "src": "src/graphics/gauntlet-bracket-1.ts",
     "isEntry": true,
     "imports": [
-      "_plugin-vue_export-helper.d3982ab3.js"
+      "_plugin-vue_export-helper.45550751.js"
     ],
     "css": [
       "assets/gauntlet-bracket-1.67799d42.css",
@@ -43,11 +43,11 @@
     ]
   },
   "src/graphics/gauntlet-bracket-2.ts": {
-    "file": "assets/gauntlet-bracket-2.0a3e47d0.js",
+    "file": "assets/gauntlet-bracket-2.29b7d283.js",
     "src": "src/graphics/gauntlet-bracket-2.ts",
     "isEntry": true,
     "imports": [
-      "_plugin-vue_export-helper.d3982ab3.js"
+      "_plugin-vue_export-helper.45550751.js"
     ],
     "css": [
       "assets/gauntlet-bracket-2.52dd9df8.css",
@@ -58,12 +58,12 @@
     ]
   },
   "src/graphics/in-game.ts": {
-    "file": "assets/in-game.be7b6d88.js",
+    "file": "assets/in-game.fc9435c0.js",
     "src": "src/graphics/in-game.ts",
     "isEntry": true,
     "imports": [
-      "_plugin-vue_export-helper.d3982ab3.js",
-      "_marquee-text.e570c219.js",
+      "_plugin-vue_export-helper.45550751.js",
+      "_marquee-text.9ed345ae.js",
       "_anime.es.4ca930c3.js",
       "__commonjsHelpers.2cf1d77b.js"
     ],
@@ -73,11 +73,11 @@
     ]
   },
   "src/graphics/losers-bracket.ts": {
-    "file": "assets/losers-bracket.ce74c129.js",
+    "file": "assets/losers-bracket.0e6e510b.js",
     "src": "src/graphics/losers-bracket.ts",
     "isEntry": true,
     "imports": [
-      "_plugin-vue_export-helper.d3982ab3.js"
+      "_plugin-vue_export-helper.45550751.js"
     ],
     "css": [
       "assets/losers-bracket.a9bf64aa.css",
@@ -88,11 +88,11 @@
     ]
   },
   "src/graphics/main-bracket.ts": {
-    "file": "assets/main-bracket.8f829c44.js",
+    "file": "assets/main-bracket.f809f76a.js",
     "src": "src/graphics/main-bracket.ts",
     "isEntry": true,
     "imports": [
-      "_plugin-vue_export-helper.d3982ab3.js"
+      "_plugin-vue_export-helper.45550751.js"
     ],
     "css": [
       "assets/main-bracket.022cf487.css",
@@ -103,11 +103,11 @@
     ]
   },
   "src/graphics/match-list.ts": {
-    "file": "assets/match-list.c5c61740.js",
+    "file": "assets/match-list.ab870b28.js",
     "src": "src/graphics/match-list.ts",
     "isEntry": true,
     "imports": [
-      "_plugin-vue_export-helper.d3982ab3.js",
+      "_plugin-vue_export-helper.45550751.js",
       "_raceToImg.c9ef94a0.js"
     ],
     "css": [
@@ -119,11 +119,11 @@
     ]
   },
   "src/graphics/stats.ts": {
-    "file": "assets/stats.5bb94411.js",
+    "file": "assets/stats.87908e74.js",
     "src": "src/graphics/stats.ts",
     "isEntry": true,
     "imports": [
-      "_plugin-vue_export-helper.d3982ab3.js",
+      "_plugin-vue_export-helper.45550751.js",
       "_raceToImg.c9ef94a0.js"
     ],
     "css": [
@@ -132,12 +132,12 @@
     ]
   },
   "src/graphics/ticker.ts": {
-    "file": "assets/ticker.fea0988c.js",
+    "file": "assets/ticker.5fcdc3e7.js",
     "src": "src/graphics/ticker.ts",
     "isEntry": true,
     "imports": [
-      "_plugin-vue_export-helper.d3982ab3.js",
-      "_marquee-text.e570c219.js",
+      "_plugin-vue_export-helper.45550751.js",
+      "_marquee-text.9ed345ae.js",
       "__commonjsHelpers.2cf1d77b.js",
       "_anime.es.4ca930c3.js",
       "_raceToImg.c9ef94a0.js"
@@ -148,11 +148,11 @@
     ]
   },
   "src/graphics/vs.ts": {
-    "file": "assets/vs.783517ac.js",
+    "file": "assets/vs.f2a7b392.js",
     "src": "src/graphics/vs.ts",
     "isEntry": true,
     "imports": [
-      "_plugin-vue_export-helper.d3982ab3.js",
+      "_plugin-vue_export-helper.45550751.js",
       "_anime.es.4ca930c3.js",
       "_raceToImg.c9ef94a0.js"
     ],
@@ -166,28 +166,28 @@
     ]
   },
   "src/dashboard/control-panel.ts": {
-    "file": "assets/control-panel.b0d0c02a.js",
+    "file": "assets/control-panel.282a2f20.js",
     "src": "src/dashboard/control-panel.ts",
     "isEntry": true,
     "imports": [
-      "_plugin-vue_export-helper.d3982ab3.js",
+      "_plugin-vue_export-helper.45550751.js",
       "__commonjsHelpers.2cf1d77b.js"
     ],
     "css": [
-      "assets/control-panel.33e9c4c9.css"
+      "assets/control-panel.36e1e2f2.css"
     ]
   },
-  "_plugin-vue_export-helper.d3982ab3.js": {
-    "file": "assets/plugin-vue_export-helper.d3982ab3.js"
+  "_plugin-vue_export-helper.45550751.js": {
+    "file": "assets/plugin-vue_export-helper.45550751.js"
   },
   "_anime.es.4ca930c3.js": {
     "file": "assets/anime.es.4ca930c3.js"
   },
-  "_marquee-text.e570c219.js": {
-    "file": "assets/marquee-text.e570c219.js",
+  "_marquee-text.9ed345ae.js": {
+    "file": "assets/marquee-text.9ed345ae.js",
     "imports": [
       "__commonjsHelpers.2cf1d77b.js",
-      "_plugin-vue_export-helper.d3982ab3.js"
+      "_plugin-vue_export-helper.45550751.js"
     ]
   },
   "__commonjsHelpers.2cf1d77b.js": {

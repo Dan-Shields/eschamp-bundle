@@ -13,48 +13,54 @@
     ]
   },
   "src/graphics/finals-bracket.ts": {
-    "file": "assets/finals-bracket.882194f5.js",
+    "file": "assets/finals-bracket.e430c12c.js",
     "src": "src/graphics/finals-bracket.ts",
     "isEntry": true,
     "imports": [
-      "_plugin-vue_export-helper.45550751.js"
+      "_plugin-vue_export-helper.45550751.js",
+      "_anime.es.4ca930c3.js",
+      "_Match.dc67f5d3.js"
     ],
     "css": [
-      "assets/finals-bracket.feda0c14.css",
+      "assets/finals-bracket.e50801a8.css",
       "assets/font.7449e257.css"
     ],
     "assets": [
-      "assets/Finals.6a81d7e2.png"
+      "assets/Finals_Lines.62271cfd.png"
     ]
   },
   "src/graphics/gauntlet-bracket-1.ts": {
-    "file": "assets/gauntlet-bracket-1.0fa40a9a.js",
+    "file": "assets/gauntlet-bracket-1.091637cb.js",
     "src": "src/graphics/gauntlet-bracket-1.ts",
     "isEntry": true,
     "imports": [
-      "_plugin-vue_export-helper.45550751.js"
+      "_plugin-vue_export-helper.45550751.js",
+      "_Match.dc67f5d3.js",
+      "_anime.es.4ca930c3.js"
     ],
     "css": [
-      "assets/gauntlet-bracket-1.67799d42.css",
+      "assets/gauntlet-bracket-1.6f25d24b.css",
       "assets/font.7449e257.css"
     ],
     "assets": [
-      "assets/Gauntlet_1.ea95534b.png"
+      "assets/Gauntlet_1_Lines.8265e2b8.png"
     ]
   },
   "src/graphics/gauntlet-bracket-2.ts": {
-    "file": "assets/gauntlet-bracket-2.29b7d283.js",
+    "file": "assets/gauntlet-bracket-2.c6c1fed1.js",
     "src": "src/graphics/gauntlet-bracket-2.ts",
     "isEntry": true,
     "imports": [
-      "_plugin-vue_export-helper.45550751.js"
+      "_plugin-vue_export-helper.45550751.js",
+      "_Match.dc67f5d3.js",
+      "_anime.es.4ca930c3.js"
     ],
     "css": [
-      "assets/gauntlet-bracket-2.52dd9df8.css",
+      "assets/gauntlet-bracket-2.9c239e88.css",
       "assets/font.7449e257.css"
     ],
     "assets": [
-      "assets/Gauntlet_2.f3d4dd25.png"
+      "assets/Gauntlet_2_Lines.5bf890d0.png"
     ]
   },
   "src/graphics/in-game.ts": {
@@ -73,33 +79,37 @@
     ]
   },
   "src/graphics/losers-bracket.ts": {
-    "file": "assets/losers-bracket.0e6e510b.js",
+    "file": "assets/losers-bracket.f2920f52.js",
     "src": "src/graphics/losers-bracket.ts",
     "isEntry": true,
     "imports": [
-      "_plugin-vue_export-helper.45550751.js"
+      "_plugin-vue_export-helper.45550751.js",
+      "_Match.dc67f5d3.js",
+      "_anime.es.4ca930c3.js"
     ],
     "css": [
-      "assets/losers-bracket.a9bf64aa.css",
+      "assets/losers-bracket.f53f2cdf.css",
       "assets/font.7449e257.css"
     ],
     "assets": [
-      "assets/Losers.96342f3c.png"
+      "assets/Losers_Lines.693dcbc8.png"
     ]
   },
   "src/graphics/main-bracket.ts": {
-    "file": "assets/main-bracket.f809f76a.js",
+    "file": "assets/main-bracket.41f8428c.js",
     "src": "src/graphics/main-bracket.ts",
     "isEntry": true,
     "imports": [
-      "_plugin-vue_export-helper.45550751.js"
+      "_plugin-vue_export-helper.45550751.js",
+      "_Match.dc67f5d3.js",
+      "_anime.es.4ca930c3.js"
     ],
     "css": [
-      "assets/main-bracket.022cf487.css",
+      "assets/main-bracket.47a4581c.css",
       "assets/font.7449e257.css"
     ],
     "assets": [
-      "assets/Main.c22246a1.png"
+      "assets/Main_Lines.1ecc98c3.png"
     ]
   },
   "src/graphics/match-list.ts": {
@@ -182,6 +192,12 @@
   },
   "_anime.es.4ca930c3.js": {
     "file": "assets/anime.es.4ca930c3.js"
+  },
+  "_Match.dc67f5d3.js": {
+    "file": "assets/Match.dc67f5d3.js",
+    "assets": [
+      "assets/Match.e5a54963.png"
+    ]
   },
   "_marquee-text.9ed345ae.js": {
     "file": "assets/marquee-text.9ed345ae.js",

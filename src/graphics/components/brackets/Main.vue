@@ -5,6 +5,7 @@
         <div v-if="bracket?.data" class="bracket">
             <div class="round" v-for="(round, roundIndex) in bracket.data">
                 <div class="match" v-for="(match, matchIndex) in round">
+                    <img class="match-bg" :src="matchBg" />
                     <div class="bot">
                         <h1>{{ nameFromId(match.bot1.id || '') }}</h1>
                         <h1>{{ match.bot1.score }}</h1>
@@ -21,9 +22,12 @@
 
 <script lang="ts" setup>
 import { useReplicant } from 'nodecg-vue-composable'
-import bg from '../../assets/Brackets/Main.png'
+import bg from '../../assets/Brackets/Main_Lines.png'
+import matchBg from '../../assets/Brackets/Match.png'
 
 import * as repDefaults from '../../../replicants'
+import anime from 'animejs'
+import { onMounted } from 'vue'
 
 const bracket = useReplicant('mainBracket', 'eschamp-bundle', {
     defaultValue: repDefaults.mainBracket,
@@ -37,6 +41,27 @@ const nameFromId = (id: string) => {
     if (!bots?.data) return null
     return bots.data[id]?.Name
 }
+
+const intro = () => {
+    anime({
+        targets: '.round',
+        translateX: [-100, 0],
+        opacity: [0, 1],
+        delay: anime.stagger(500),
+        duration: 750,
+        easing: 'easeOutQuad',
+        complete: () => {
+            anime({
+                targets: '.bg',
+                opacity: [0, 1],
+                duration: 1000,
+                easing: 'easeOutQuad',
+            })
+        },
+    })
+}
+
+onMounted(() => setTimeout(intro, 1500))
 </script>
 
 <style lang="scss" scoped>
@@ -54,6 +79,7 @@ const nameFromId = (id: string) => {
         width: 100%;
         height: 100%;
         z-index: -1000;
+        opacity: 0;
     }
 
     .bracket {
@@ -69,6 +95,7 @@ const nameFromId = (id: string) => {
 
             position: absolute;
             top: 0;
+            opacity: 0;
 
             &:nth-child(1) {
                 > .match:not(:last-child):nth-child(2n) {
@@ -111,6 +138,12 @@ const nameFromId = (id: string) => {
                 flex-direction: column;
                 justify-content: space-between;
                 margin-bottom: 21px;
+
+                .match-bg {
+                    position: absolute;
+                    transform: translate(-38px, -40px);
+                    z-index: -5;
+                }
 
                 .bot {
                     display: flex;

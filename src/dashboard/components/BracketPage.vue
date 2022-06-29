@@ -98,15 +98,22 @@ import * as repDefaults from '../../replicants'
 
 const props = defineProps({
     type: {
-        type: String as PropType<'main' | 'losers' | 'finals' | 'gauntlet'>,
+        type: String as PropType<
+            'main' | 'losers' | 'finals' | 'gauntlet' | 'group'
+        >,
         required: true,
+    },
+    group: {
+        type: String as PropType<'A' | 'B' | 'C' | 'D' | null>,
+        default: null,
     },
 })
 
-const bracketName = `${props.type}Bracket` as keyof typeof repDefaults
+const repName = `${props.type}${props.group ?? ''}Bracket`
+const repDefaultName = `${props.type}Bracket` as keyof typeof repDefaults
 
-const bracket = useReplicant(bracketName, 'eschamp-bundle', {
-    defaultValue: repDefaults[bracketName] as repDefaults.Bracket,
+const bracket = useReplicant(repName, 'eschamp-bundle', {
+    defaultValue: repDefaults[repDefaultName] as repDefaults.Bracket,
 })
 
 const bots = useReplicant('bots', 'eschamp-bundle', {
@@ -145,6 +152,7 @@ const roundTitle = (roundIndex: number): string => {
             else return roundIndex === 1 ? 'LB Final' : 'Grand Finals'
 
         case 'gauntlet':
+        case 'group':
             return `Round ${roundIndex + 1}`
     }
 }
@@ -165,6 +173,15 @@ const matchTitle = (roundIndex: number, matchIndex: number): string => {
 
         case 'gauntlet':
             return `G ${roundIndex + 1}.1`
+
+        case 'group':
+            if (roundIndex === 0) {
+                if (matchIndex === 0) return 'Semifinal 1'
+                else if (matchIndex === 1) return 'Semifinal 2'
+                else return 'Losers round 1'
+            } else {
+                return matchIndex ? 'Losers round 2' : 'Finals'
+            }
     }
 }
 </script>

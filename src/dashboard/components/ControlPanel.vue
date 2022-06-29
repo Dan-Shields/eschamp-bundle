@@ -30,6 +30,15 @@
                     <el-tab-pane label="Gauntlet">
                         <BracketPage type="gauntlet" />
                     </el-tab-pane>
+                    <el-tab-pane
+                        v-for="letter in ['A', 'B', 'C', 'D']"
+                        :label="`Group ${letter}`"
+                    >
+                        <BracketPage
+                            type="group"
+                            :group="letter as 'A' | 'B' | 'C' | 'D'"
+                        />
+                    </el-tab-pane>
                 </el-tabs>
             </el-main>
         </el-container>

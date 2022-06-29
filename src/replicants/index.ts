@@ -108,3 +108,9 @@ export const finalsBracket: Bracket = Array.from({ length: 3 }, (_, index) => {
 export const gauntletBracket: Bracket = Array.from({ length: 7 }, () => [
     generateBracketMatch(),
 ])
+
+export const groupBracket: Bracket = Array.from({ length: 2 }, (_, index) => {
+    return Array.from({ length: index < 1 ? 3 : 2 }, () =>
+        generateBracketMatch()
+    )
+})

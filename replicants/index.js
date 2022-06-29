@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.gauntletBracket = exports.finalsBracket = exports.losersBracket = exports.mainBracket = exports.matches = exports.introBot = exports.patrons = exports.scoreboard = exports.bots = exports.timers = exports.ticker = void 0;
+exports.groupBracket = exports.gauntletBracket = exports.finalsBracket = exports.losersBracket = exports.mainBracket = exports.matches = exports.introBot = exports.patrons = exports.scoreboard = exports.bots = exports.timers = exports.ticker = void 0;
 exports.ticker = {
     topText: '',
     bottomText: '',
@@ -52,3 +52,6 @@ exports.finalsBracket = Array.from({ length: 3 }, (_, index) => {
 exports.gauntletBracket = Array.from({ length: 7 }, () => [
     generateBracketMatch(),
 ]);
+exports.groupBracket = Array.from({ length: 2 }, (_, index) => {
+    return Array.from({ length: index < 1 ? 3 : 2 }, () => generateBracketMatch());
+});

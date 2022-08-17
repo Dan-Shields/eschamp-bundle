@@ -1,6 +1,6 @@
 {
   "src/graphics/credits.ts": {
-    "file": "assets/credits.83165f1a.js",
+    "file": "assets/credits.3d988f5e.js",
     "src": "src/graphics/credits.ts",
     "isEntry": true,
     "imports": [
@@ -8,12 +8,12 @@
       "_anime.es.4ca930c3.js"
     ],
     "css": [
-      "assets/credits.a3ada37d.css",
+      "assets/credits.a0cab8b0.css",
       "assets/font.7449e257.css"
     ]
   },
   "src/graphics/finals-bracket.ts": {
-    "file": "assets/finals-bracket.2aadf658.js",
+    "file": "assets/finals-bracket.4b0b6f9f.js",
     "src": "src/graphics/finals-bracket.ts",
     "isEntry": true,
     "imports": [
@@ -22,7 +22,7 @@
       "_Match.dc67f5d3.js"
     ],
     "css": [
-      "assets/finals-bracket.e50801a8.css",
+      "assets/finals-bracket.2017357b.css",
       "assets/font.7449e257.css"
     ],
     "assets": [
@@ -30,7 +30,7 @@
     ]
   },
   "src/graphics/gauntlet-bracket-1.ts": {
-    "file": "assets/gauntlet-bracket-1.cf89c270.js",
+    "file": "assets/gauntlet-bracket-1.a8d58a42.js",
     "src": "src/graphics/gauntlet-bracket-1.ts",
     "isEntry": true,
     "imports": [
@@ -39,7 +39,7 @@
       "_anime.es.4ca930c3.js"
     ],
     "css": [
-      "assets/gauntlet-bracket-1.6f25d24b.css",
+      "assets/gauntlet-bracket-1.03c1d2b1.css",
       "assets/font.7449e257.css"
     ],
     "assets": [
@@ -47,7 +47,7 @@
     ]
   },
   "src/graphics/gauntlet-bracket-2.ts": {
-    "file": "assets/gauntlet-bracket-2.9fb02b07.js",
+    "file": "assets/gauntlet-bracket-2.cbbc56d1.js",
     "src": "src/graphics/gauntlet-bracket-2.ts",
     "isEntry": true,
     "imports": [
@@ -56,7 +56,7 @@
       "_anime.es.4ca930c3.js"
     ],
     "css": [
-      "assets/gauntlet-bracket-2.9c239e88.css",
+      "assets/gauntlet-bracket-2.c2394e3a.css",
       "assets/font.7449e257.css"
     ],
     "assets": [
@@ -64,7 +64,7 @@
     ]
   },
   "src/graphics/group-bracket.ts": {
-    "file": "assets/group-bracket.1890c53c.js",
+    "file": "assets/group-bracket.92c4760b.js",
     "src": "src/graphics/group-bracket.ts",
     "isEntry": true,
     "imports": [
@@ -73,7 +73,7 @@
       "_anime.es.4ca930c3.js"
     ],
     "css": [
-      "assets/group-bracket.c8a58280.css",
+      "assets/group-bracket.e6c420dc.css",
       "assets/font.7449e257.css"
     ],
     "assets": [
@@ -81,7 +81,7 @@
     ]
   },
   "src/graphics/in-game.ts": {
-    "file": "assets/in-game.24ef926b.js",
+    "file": "assets/in-game.06cf5b10.js",
     "src": "src/graphics/in-game.ts",
     "isEntry": true,
     "imports": [
@@ -91,12 +91,12 @@
       "__commonjsHelpers.2cf1d77b.js"
     ],
     "css": [
-      "assets/in-game.c479e93b.css",
+      "assets/in-game.905e0841.css",
       "assets/font.7449e257.css"
     ]
   },
   "src/graphics/losers-bracket.ts": {
-    "file": "assets/losers-bracket.8c3d3b07.js",
+    "file": "assets/losers-bracket.4a1bcd38.js",
     "src": "src/graphics/losers-bracket.ts",
     "isEntry": true,
     "imports": [
@@ -105,7 +105,7 @@
       "_anime.es.4ca930c3.js"
     ],
     "css": [
-      "assets/losers-bracket.f53f2cdf.css",
+      "assets/losers-bracket.f8f4738a.css",
       "assets/font.7449e257.css"
     ],
     "assets": [
@@ -113,7 +113,7 @@
     ]
   },
   "src/graphics/main-bracket.ts": {
-    "file": "assets/main-bracket.78c0de60.js",
+    "file": "assets/main-bracket.4bc1e04c.js",
     "src": "src/graphics/main-bracket.ts",
     "isEntry": true,
     "imports": [
@@ -122,7 +122,7 @@
       "_anime.es.4ca930c3.js"
     ],
     "css": [
-      "assets/main-bracket.47a4581c.css",
+      "assets/main-bracket.c226f0bc.css",
       "assets/font.7449e257.css"
     ],
     "assets": [
@@ -130,7 +130,7 @@
     ]
   },
   "src/graphics/match-list.ts": {
-    "file": "assets/match-list.ec5a3805.js",
+    "file": "assets/match-list.80737a53.js",
     "src": "src/graphics/match-list.ts",
     "isEntry": true,
     "imports": [
@@ -138,7 +138,7 @@
       "_raceToImg.c9ef94a0.js"
     ],
     "css": [
-      "assets/match-list.5213ed15.css",
+      "assets/match-list.6dbbdbce.css",
       "assets/font.7449e257.css"
     ],
     "assets": [
@@ -146,7 +146,7 @@
     ]
   },
   "src/graphics/stats.ts": {
-    "file": "assets/stats.4210c8a6.js",
+    "file": "assets/stats.df91028f.js",
     "src": "src/graphics/stats.ts",
     "isEntry": true,
     "imports": [
@@ -154,12 +154,12 @@
       "_raceToImg.c9ef94a0.js"
     ],
     "css": [
-      "assets/stats.bbb086b3.css",
+      "assets/stats.4b7adb0a.css",
       "assets/font.7449e257.css"
     ]
   },
   "src/graphics/ticker.ts": {
-    "file": "assets/ticker.ad3d3176.js",
+    "file": "assets/ticker.fc679071.js",
     "src": "src/graphics/ticker.ts",
     "isEntry": true,
     "imports": [
@@ -170,12 +170,12 @@
       "_raceToImg.c9ef94a0.js"
     ],
     "css": [
-      "assets/ticker.08af58c9.css",
+      "assets/ticker.e0160a9b.css",
       "assets/font.7449e257.css"
     ]
   },
   "src/graphics/vs.ts": {
-    "file": "assets/vs.5f5d598f.js",
+    "file": "assets/vs.35da9643.js",
     "src": "src/graphics/vs.ts",
     "isEntry": true,
     "imports": [
@@ -184,7 +184,7 @@
       "_raceToImg.c9ef94a0.js"
     ],
     "css": [
-      "assets/vs.12c683fc.css",
+      "assets/vs.6ab88b7b.css",
       "assets/font.7449e257.css"
     ],
     "assets": [
@@ -193,7 +193,7 @@
     ]
   },
   "src/dashboard/control-panel.ts": {
-    "file": "assets/control-panel.72d94c47.js",
+    "file": "assets/control-panel.729b232e.js",
     "src": "src/dashboard/control-panel.ts",
     "isEntry": true,
     "imports": [
@@ -201,7 +201,7 @@
       "__commonjsHelpers.2cf1d77b.js"
     ],
     "css": [
-      "assets/control-panel.eba390ca.css"
+      "assets/control-panel.940e354b.css"
     ]
   },
   "_plugin-vue_export-helper.2efe6ab9.js": {

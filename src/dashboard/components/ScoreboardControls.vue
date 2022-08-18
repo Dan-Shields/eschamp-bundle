@@ -16,13 +16,19 @@
             <el-row>
                 <el-col :span="6">
                     <el-form-item label="Bot 1">
-                        <el-select-v2
+                        <el-select
                             v-model="scoreboard.data.bot1.id"
-                            :options="botOptions"
                             placeholder="Please select"
                             clearable
                             filterable
-                        />
+                        >
+                            <el-option
+                                v-for="bot in botOptions"
+                                :key="bot.value"
+                                :label="bot.label"
+                                :value="bot.value"
+                            />
+                        </el-select>
                     </el-form-item>
                 </el-col>
                 <el-col :span="4">
@@ -45,13 +51,19 @@
                 </el-col>
                 <el-col :span="6">
                     <el-form-item label="Bot 2">
-                        <el-select-v2
+                        <el-select
                             v-model="scoreboard.data.bot2.id"
-                            :options="botOptions"
                             placeholder="Please select"
                             clearable
                             filterable
-                        />
+                        >
+                            <el-option
+                                v-for="bot in botOptions"
+                                :key="bot.value"
+                                :label="bot.label"
+                                :value="bot.value"
+                            />
+                        </el-select>
                     </el-form-item>
                 </el-col>
             </el-row>

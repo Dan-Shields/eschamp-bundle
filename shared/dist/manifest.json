@@ -193,7 +193,7 @@
     ]
   },
   "src/dashboard/control-panel.ts": {
-    "file": "assets/control-panel.729b232e.js",
+    "file": "assets/control-panel.a7be71b7.js",
     "src": "src/dashboard/control-panel.ts",
     "isEntry": true,
     "imports": [
